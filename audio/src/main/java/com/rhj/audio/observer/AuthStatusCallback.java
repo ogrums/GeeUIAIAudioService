@@ -1,7 +1,7 @@
 package com.rhj.audio.observer;
 
 /**
- * 授权状态回掉
+ * Callback d'état d'autorisation
  */
 public interface AuthStatusCallback {
     void onAuthStausStateChange(boolean status);

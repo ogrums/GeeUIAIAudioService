@@ -10,7 +10,7 @@ import java.lang.Exception
  */
 
 object FmodSound {
-    //音效的类型
+    //Type d'effet sonore
 
     init {
         System.loadLibrary("fmodL")
@@ -20,7 +20,7 @@ object FmodSound {
 
     external fun playTts(url: String, listener: IPlaySoundListener)
     interface IPlaySoundListener {
-        //成功
+        //Succès
         fun onFinish()
     }
 

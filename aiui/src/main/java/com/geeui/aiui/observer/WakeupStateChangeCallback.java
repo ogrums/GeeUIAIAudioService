@@ -2,10 +2,10 @@ package com.geeui.aiui.observer;
 
 public interface WakeupStateChangeCallback {
     /**
-     * @param stateData avatar.silence 等待唤醒
-     *                  avatar.listening 监听中
-     *                  avatar.understanding 理解中
-     *                  avatar.speaking 播放语音中
+     * @param stateData avatar.silence : en attente de réveil
+     *                  avatar.listening : écoute
+     *                  avatar.understanding : compréhension
+     *                  avatar.speaking : lecture vocale
      */
     void onState(String stateData);
 }

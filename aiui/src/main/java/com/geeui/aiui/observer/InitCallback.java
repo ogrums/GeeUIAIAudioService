@@ -1,7 +1,7 @@
 package com.geeui.aiui.observer;
 
 /**
- * 初始化状态改变的监听
+ * Listener de changement d'état d'init
  */
 public interface InitCallback {
     void stateChange(boolean initStatus);

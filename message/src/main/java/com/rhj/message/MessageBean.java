@@ -7,7 +7,7 @@ public class MessageBean {
     public static final int TYPE_WIDGET_LIST = 3;
     public static final int TYPE_WIDGET_WEB = 4;
     /**
-     * 音乐类的消息回调，如歌曲信息
+     * Callback de message musical (infos morceau)
      */
     public static final int TYPE_WIDGET_MEDIA = 5;
     public static final int TYPE_WIDGET_WEATHER = 6;
@@ -15,15 +15,15 @@ public class MessageBean {
 
     public static final int TYPE_WAKEUP_RESULT = 8;
     /**
-     * asr 检测超时，声音为空
+     * Timeout ASR, audio vide
      */
     public static final int TYPE_VAD_TIMEOUT = 9;
     /**
-     * 对话开始
+     * Début de dialogue
      */
     public static final int TYPE_DIALOG_START = 10;
     /**
-     * 对话结束
+     * Fin de dialogue
      */
     public static final int TYPE_DIALOG_END = 11;
 

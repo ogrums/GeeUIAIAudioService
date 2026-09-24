@@ -1,7 +1,7 @@
 package com.rhj.audio.observer;
 
 /**
- * 唤醒角度回掉
+ * Callback d'angle de réveil (DOA)
  * {"doa":355,"wakeupWord":"嗨，小乐","wakeupType":"major"}
  */
 public interface WakeupDoaCallback {
