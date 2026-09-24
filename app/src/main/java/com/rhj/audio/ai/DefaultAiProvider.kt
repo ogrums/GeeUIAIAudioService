@@ -1,7 +1,7 @@
 package com.rhj.audio.ai
 
 /**
- * Default composite provider: chosen LLM + DUI TTS + no-op capture / wake-word.
+ * Default composite provider: chosen LLM, DUI TTS, and no-op capture / wake-word.
  */
 class DefaultAiProvider(
     override val config: AiRuntimeConfig,
@@ -12,7 +12,8 @@ class DefaultAiProvider(
     override val vad: VoiceActivityDetector = NoOpVad(),
     override val nlu: NluEngine = NoOpNluEngine(),
     override val skills: SkillRouter = NoOpSkillRouter(),
-    override val capture: AudioCapture = NoOpAudioCapture()
+    override val capture: AudioCapture = NoOpAudioCapture(),
+    override val turns: TurnController = DefaultTurnController(nlu, skills, llm)
 ) : AiProvider {
     override val id: String = config.providerId
 }

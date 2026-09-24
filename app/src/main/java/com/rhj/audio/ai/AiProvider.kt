@@ -2,8 +2,7 @@ package com.rhj.audio.ai
 
 /**
  * Facade over one cloud (or local) AI stack.
- * Swap STT / LLM / TTS / wake-word together by changing the factory output,
- * not LTPAudioService.
+ * Swap STT, LLM, TTS, and wake-word by changing the factory output, not LTPAudioService.
  */
 interface AiProvider {
     val id: String
@@ -16,4 +15,5 @@ interface AiProvider {
     val nlu: NluEngine
     val skills: SkillRouter
     val capture: AudioCapture
+    val turns: TurnController
 }
