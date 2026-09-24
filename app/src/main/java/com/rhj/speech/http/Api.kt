@@ -36,7 +36,7 @@ interface Api : NewApi {
     ): Response<BaseResultBean<WakeUpModel>>
 
     /**
-     * 拿到大模型的配置
+     * Fetch LLM configuration
      */
     @GET("/your_api")
     suspend fun getAiConfig(

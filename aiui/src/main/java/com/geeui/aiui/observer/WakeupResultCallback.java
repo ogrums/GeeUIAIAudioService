@@ -2,10 +2,10 @@ package com.geeui.aiui.observer;
 
 public interface WakeupResultCallback {
     /**
-     * @param stateData avatar.silence 等待唤醒
-     *                  avatar.listening 监听中
-     *                  avatar.understanding 理解中
-     *                  avatar.speaking 播放语音中
+     * @param stateData avatar.silence: waiting for wake-up
+     *                  avatar.listening: listening
+     *                  avatar.understanding: understanding
+     *                  avatar.speaking: speaking
      */
     void getResult(String result);
 }
